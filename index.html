@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>손례원 09 17</title>
+
+  <!-- ② CSS — 어떻게 보이는가 -->
+  <style>
+    h1 { color: #4338ca; }
+    button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <!-- ① HTML — 무엇이 있는가 -->
+  <h1 id="title">안녕하세요!</h1>
+  <button id="btn">눌러 보세요</button>
+
+  <!-- ③ JavaScript — 무엇을 하는가 -->
+  <script>
+    document.querySelector('#btn').addEventListener('click', function () {
+      document.querySelector('#title').textContent = '반갑습니다! 🎉';
+    });
+  </script>
+</body>
+</html>
